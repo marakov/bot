@@ -16,7 +16,7 @@ public class RestControllerImpl {
         return "test";
     }
 
-    @PostMapping("/confirm")
+    @RequestMapping(value = "/confirm", method = RequestMethod.POST)
     public String confirm() {
         return "6019f0c1";
     }
