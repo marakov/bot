@@ -2,10 +2,7 @@ package com.marakogr.boot;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class RestControllerImpl {
@@ -15,7 +12,12 @@ public class RestControllerImpl {
     }
 
     @GetMapping("/")
-    public String test(){
+    public String test() {
         return "test";
+    }
+
+    @PostMapping("/confirm")
+    public String confirm() {
+        return "6019f0c1";
     }
 }
